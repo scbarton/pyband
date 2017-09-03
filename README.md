@@ -3,12 +3,12 @@ This is a python wrapper for BAND.F by John S. Newman with portions by others. I
 
 Portions are copywrite John S. Newman 1998, and there are other contributions as listed in License.txt.
 
-## To install
+## To install:
 
     $ pip install git+git://github.com/scbarton/pyband.git
 
-## To test
-Using [Jupyter Notebook](http://jupyter.org)
+## To test:
+Using [Jupyter Notebook](http://jupyter.org):
 
     %pylab inline
     from pyband.example import samplefd
