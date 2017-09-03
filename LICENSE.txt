@@ -1,0 +1,43 @@
+License information
+===================
+
+BAND.F is copyright John Newman 1998.
+http://www.cchem.berkeley.edu/jsngrp/fortran.html
+
+    You may make a copy of this program which you may personally and freely
+    use in its unaltered form.  You may distribute this program
+    subject to the conditions that it stays free of charge and that any
+    duplication of this program must be essentially unaltered and must
+    include this notice.  We make no warranties, expressed or implied, that
+    this program is free of errors or that it will meet the requirements of
+    your application. The author and publisher disclaim all liability for
+    direct or consequential damages resulting from use of this program.
+
+
+bound_val(), interpolate() and fillmat() adapted from:
+
+    Benoit De Becker, "Mass-transfer rate and current distribution in 
+    periodic fluid flow", Ph.D. Thesis, Columbia University, 1995.
+    https://clio.columbia.edu/catalog/1728172
+
+
+License for the Python code
+---------------------------------------
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

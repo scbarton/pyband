@@ -1,0 +1,50 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module band ! in 
+    interface  ! in :band
+        subroutine abdgxy(abd,bigg,delcout,nin,njin) ! in :band:band.f
+            real*8 dimension(nin,3 * nin,njin), intent(in) :: abd
+            real*8 dimension(nin,njin),depend(nin,njin), intent(in) :: bigg
+            real*8 dimension(nin,njin),depend(nin,njin), intent(out) :: delcout
+            integer*4, optional,check(shape(abd,0)==nin),depend(abd), intent(in) :: nin=shape(abd,0)
+            integer*4, optional,check(shape(abd,2)==njin),depend(abd), intent(in) :: njin=shape(abd,2)
+            double precision dimension(12,12) :: a
+            double precision dimension(12,12) :: b
+            double precision dimension(12,10003) :: delc
+            double precision dimension(12,25) :: d
+            double precision dimension(12) :: g
+            double precision dimension(12,12) :: x
+            double precision dimension(12,12) :: y
+            integer*4 :: n
+            integer*4 :: nj
+            common a,b,delc,d,g,x,y,n,nj
+        end subroutine abdgxy
+        subroutine band(j) ! in :band:band.f
+            integer :: j
+            double precision dimension(12,12) :: a
+            double precision dimension(12,12) :: b
+            double precision dimension(12,10003) :: delc
+            double precision dimension(12,25) :: d
+            double precision dimension(12) :: g
+            double precision dimension(12,12) :: x
+            double precision dimension(12,12) :: y
+            integer :: n
+            integer :: nj
+            common a,b,delc,d,g,x,y,n,nj
+        end subroutine band
+        subroutine matinv(n,m,determ) ! in :band:band.f
+            integer :: n
+            integer :: m
+            double precision :: determ
+            double precision dimension(12,12) :: a
+            double precision dimension(12,12) :: b
+            double precision dimension(12,10003) :: delc
+            double precision dimension(12,25) :: d
+            common a,b,delc,d
+        end subroutine matinv
+    end interface 
+end python module band
+
+! This file was auto-generated with f2py (version:2).
+! See http://cens.ioc.ee/projects/f2py2e/
