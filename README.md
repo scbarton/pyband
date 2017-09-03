@@ -16,7 +16,7 @@ Using [Jupyter Notebook](http://jupyter.org)
 
 which should produce the following plot:
 
-![plot](/path/to/img.jpg "Title")
+![plot](example.png)
 
-You may also use the attached notebook [pyband.ipynb]() which includes a performance comparison with `scipy.integrate.solve_bvp`.
+You may also use the attached notebook [pyband.ipynb](pyband.ipynb) which includes a performance comparison with `scipy.integrate.solve_bvp`.
   
